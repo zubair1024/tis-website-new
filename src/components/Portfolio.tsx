@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 const portfolios = [
@@ -63,7 +64,11 @@ const Portfolio = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div className="flex flex-col p-6 space-y-6">
+        <motion.div
+          className="flex flex-col p-6 space-y-6"
+          initial={{ opacity: 0, x: 300 }}
+          animate={{ opacity: 1, x: 0, transition: { duration: 0.5 } }}
+        >
           {portfolios.map((i, idx) => (
             <div key={`portfolio_${idx}`}>
               <PortfolioCard
@@ -74,7 +79,7 @@ const Portfolio = () => {
               />
             </div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </>
   );

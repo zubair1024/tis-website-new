@@ -15,7 +15,7 @@ const Home = () => {
   return (
     <Layout title={title} description={description}>
       <>
-        <header className="fixed w-full">
+        <header className="fixed z-50 w-full">
           <Header></Header>
         </header>
         <main className="pt-10">
