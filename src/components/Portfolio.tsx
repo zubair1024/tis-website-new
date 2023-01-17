@@ -3,52 +3,100 @@ import Image from "next/image";
 
 const portfolios = [
   {
-    title: "lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet. Et reiciendis alias sit nesciunt illum qui vero error in optio rerum ut doloremque ducimus. Est aperiam itaque qui asperiores praesentium eum alias possimus ut facilis itaque qui sunt placeat. Sit galisum omnis et dolorum ipsam sit repellat quibusdam.",
-    image: "https://picsum.photos/512/512",
+    title: "Latifa Hospital - Dubai",
+    image: [
+      "/portfolio/latifa_hospital1.jpeg",
+      "/portfolio/latifa_hospital2.jpeg",
+    ],
     vector: "/vector-1.svg",
   },
   {
-    title: "lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet. Et reiciendis alias sit nesciunt illum qui vero error in optio rerum ut doloremque ducimus. Est aperiam itaque qui asperiores praesentium eum alias possimus ut facilis itaque qui sunt placeat. Sit galisum omnis et dolorum ipsam sit repellat quibusdam.",
-    image: "https://picsum.photos/512/512",
+    title: "Private Villa at Emirates Hills, Dubai",
+    image: [
+      "/portfolio/private_villa_emirates_hills1.jpeg",
+      "/portfolio/private_villa_emirates_hills2.jpeg",
+    ],
     vector: "/vector-1.svg",
   },
   {
-    title: "lorem ipsum",
-    description:
-      "Lorem ipsum dolor sit amet. Et reiciendis alias sit nesciunt illum qui vero error in optio rerum ut doloremque ducimus. Est aperiam itaque qui asperiores praesentium eum alias possimus ut facilis itaque qui sunt placeat. Sit galisum omnis et dolorum ipsam sit repellat quibusdam.",
-    image: "https://picsum.photos/512/512",
+    title: "Saint Gobain Comfort Home - Masdar, Abu Dhabi",
+    image: ["/portfolio/Saint Gobain comfort house - Masdar, Abudhabi.jpeg"],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "Sobha Canal Villas - Sobha Hartland, Meydan, Dubai",
+    image: [
+      "/portfolio/Sobha Canal Villas - Sobha Hartland, Meydan, Dubai.jpeg",
+    ],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "Sobha Greens, Sobha Hartland, Dubai",
+    image: ["/portfolio/Sobha Greens, Sobha Hartland, Dubai.jpeg"],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "W Hotel - Mina Seyahi, Dubai",
+    image: ["/portfolio/W Hotel - Mina Seyahi, Dubai.jpeg"],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "Els Club - Dubai Sports City, Dubai",
+    image: [
+      "/portfolio/Els Club - Dubai Sports City 1.jpeg",
+      "/portfolio/Els Club - Dubai Sports City 2.jpeg",
+    ],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "Luxury Villa - Jumeriah Bay, Dubai",
+    image: [
+      "/portfolio/Luxury private villa - jumeriah bay, Dubai 1.jpeg",
+      "/portfolio/Luxury private villa - jumeriah bay, Dubai 2.jpeg",
+    ],
+    vector: "/vector-1.svg",
+  },
+  {
+    title: "Dunes Villas for Ghurair family - Khawaneej, Dubai",
+    image: ["/portfolio/dune 2.jpg", "/portfolio/dune 1.jpg"],
     vector: "/vector-1.svg",
   },
 ];
 
 interface IPortfolioCardProps {
   title: string;
-  description: string;
-  image: string;
+  image: string[];
   vector: string;
 }
 
 const PortfolioCard = (props: IPortfolioCardProps) => {
   return (
-    <div className="flex space-x-6 justify-center items-center p-5 bg-[#fff] ">
-      <div className="">
-        <Image
-          alt={props.title}
-          src={props.image}
-          height={512}
-          width={1024}
-          className="rounded-lg"
-        ></Image>
+    <div className="flex flex-col  justify-center items-center  bg-[#fff] ">
+      <div
+      // style={{
+      //   backgroundImage: `url(${props.vector})`,
+      //   backgroundSize: "cover",
+      // }}
+      >
+        <div className="flex flex-wrap justify-center space-y-3 md:space-y-0 md:space-x-4">
+          {props.image.map((i) => {
+            return (
+              <Image
+                key={i}
+                alt={props.title}
+                src={i}
+                height={300}
+                width={300}
+                className="rounded-lg shadow-md"
+              ></Image>
+            );
+          })}
+        </div>
       </div>
       <div>
-        <h2 className="py-2 text-xl ">{props.title}</h2>
-        <p className="text-sm font-light tracking-tighter">
-          {props.description}
-        </p>
+        <h2 className="py-3 font-semibold text-center text-md font-lato">
+          {props.title}
+        </h2>
       </div>
     </div>
   );
@@ -77,7 +125,6 @@ const Portfolio = () => {
             <div key={`portfolio_${idx}`}>
               <PortfolioCard
                 title={i.title}
-                description={i.description}
                 image={i.image}
                 vector={i.vector}
               />

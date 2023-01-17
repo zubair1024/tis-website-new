@@ -32,8 +32,11 @@ const Header = () => {
           <Link href={"#"}>
             <li>Home</li>
           </Link>
+          <Link href={"#"}>
+            <li>Services</li>
+          </Link>
           <Link href={"#about"}>
-            <li>About</li>
+            <li>Our Work</li>
           </Link>
           <Link href={"#contact-us"}>
             <li>Contact</li>

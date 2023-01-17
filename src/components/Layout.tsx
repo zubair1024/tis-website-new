@@ -19,7 +19,7 @@ const Layout = (props: ILayoutProps) => {
           },
           {
             rel: "preload",
-            href: "http://fonts.googleapis.com/css?family=Lato:400,700",
+            href: "https://fonts.googleapis.com/css?family=Lato:400,700",
             as: "font",
             type: "font/woff2",
             crossOrigin: "anonymous",
