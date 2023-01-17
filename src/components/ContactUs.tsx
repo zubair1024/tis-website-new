@@ -43,7 +43,9 @@ const ContactForm = () => {
     <>
       {showMessage ? (
         <div className="md:min-w-[400px] flex flex-col justify-center items-center space-y-6">
-          <h2>Thank you 👍</h2>
+          <h2 className="text-xl font-semibold uppercase font-lato">
+            Thank you
+          </h2>
           <Image
             src="/send.svg"
             width={100}
@@ -51,10 +53,8 @@ const ContactForm = () => {
             alt="message sent"
           ></Image>
           <div className="max-w-sm">
-            <p className="font-lato">
-              Your message has been sent. We will get back to you shortly. In
-              situation the message has been missed you can contact us directly
-              on the contact details provided.
+            <p className="text-center font-lato">
+              Your message has been sent. We will get back to you shortly.
             </p>
           </div>
         </div>
