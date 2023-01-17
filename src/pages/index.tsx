@@ -9,7 +9,7 @@ import dynamic from "next/dynamic";
 
 const title = "TIS Solutions";
 //TODO add a proper description
-const description = "This is a description";
+const description = "Your Cladding Solution Provider";
 
 const Home = () => {
   return (
