@@ -138,7 +138,7 @@ const ContactUs = () => {
     <>
       <div
         id="contact-us"
-        className="contact-section flex flex-col items-center justify-center py-10 text-[#fff]"
+        className="contact-section flex flex-col items-center justify-center py-10 text-[#fff] scroll-mt-16"
       >
         <div className="text-center">
           <h1 className="text-2xl">Contact Us</h1>

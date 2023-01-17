@@ -105,7 +105,10 @@ const PortfolioCard = (props: IPortfolioCardProps) => {
 const Portfolio = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center max-w-3xl py-12 mx-auto">
+      <div
+        id="portfolio"
+        className="flex flex-col items-center justify-center max-w-3xl py-12 mx-auto scroll-mt-16"
+      >
         <div className="text-center font-lato">
           <h1 className="pb-4 text-3xl font-bold ">Projects</h1>
           <p className="max-w-3xl text-xl font-thin">

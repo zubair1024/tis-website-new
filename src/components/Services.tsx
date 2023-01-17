@@ -67,7 +67,10 @@ const Services = () => {
   return (
     <>
       <div className="edge-top"></div>
-      <div className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-[#80E7B2] to-[#83EDEB]">
+      <div
+        id="services"
+        className="flex flex-col items-center justify-center py-12 bg-gradient-to-t from-[#80E7B2] to-[#83EDEB] scroll-mt-16"
+      >
         <div className="text-center font-lato">
           <h1 className="pb-4 text-3xl font-bold ">Our Services</h1>
           <p className="max-w-3xl text-xl font-thin">

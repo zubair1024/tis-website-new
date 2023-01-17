@@ -15,7 +15,7 @@ const Layout = (props: ILayoutProps) => {
         additionalLinkTags={[
           {
             rel: "icon",
-            href: "/favicon.ico",
+            href: "/favicon/favicon.ico",
           },
           {
             rel: "preload",
@@ -32,7 +32,7 @@ const Layout = (props: ILayoutProps) => {
           },
         ]}
       ></NextSeo>
-      <div className="">{props.children}</div>
+      <div>{props.children}</div>
     </>
   );
 };
