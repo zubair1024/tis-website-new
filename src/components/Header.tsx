@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <div
       id="header"
-      className="flex justify-between flex-row-reverse md:flex-row px-6 py-2 bg-[#fff]"
+      className="flex justify-between flex-row-reverse md:flex-row md:items-center px-6 py-2 bg-[#fff]"
     >
       <div>
         <Image src={logo} height={226} width={128} alt="logo"></Image>
