@@ -57,11 +57,15 @@ const PortfolioCard = (props: IPortfolioCardProps) => {
 const Portfolio = () => {
   return (
     <>
-      <div className="flex flex-col items-center justify-center max-w-2xl py-12 mx-auto">
+      <div className="flex flex-col items-center justify-center max-w-3xl py-12 mx-auto">
         <div className="text-center font-lato">
-          <h1 className="text-2xl font-medium ">Lorem ipsum</h1>
-          <p className="text-sm font-thin">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          <h1 className="pb-4 text-3xl font-bold ">Projects</h1>
+          <p className="max-w-3xl text-xl font-thin">
+            Our team of experienced professionals has the skills and expertise
+            to handle projects of all sizes, from small renovations to
+            large-scale commercial developments. We take a collaborative
+            approach to every project, working closely with our clients to
+            understand their unique needs and goals.
           </p>
         </div>
         <motion.div

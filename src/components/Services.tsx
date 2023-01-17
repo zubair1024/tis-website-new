@@ -35,7 +35,7 @@ const serviceItems: IServiceCardProps[] = [
 
 const ServiceCard = (props: IServiceCardProps) => {
   return (
-    <div className="transition ease-in hover:scale-105">
+    <div className="transition ease-in md:hover:scale-105">
       <motion.div
         className="flex flex-col space-x-6 md:space-x-0 md:flex-col justify-center items-center bg-[#fff] shadow-2xl rounded-xl md:max-w-xs mt-3 md:mx-2"
         initial={{ opacity: 0, y: 300 }}
@@ -48,7 +48,7 @@ const ServiceCard = (props: IServiceCardProps) => {
             backgroundSize: "cover",
           }}
         >
-          <div className=" min-h-[80px] flex flex-col justify-end w-full bg-gradient-to-t from-[#000] to-[transparent]">
+          <div className=" min-h-[80px] hover:min-h-[100px]  duration-150 flex flex-col justify-end w-full bg-gradient-to-t from-[#000] to-[transparent]">
             <h2 className="py-2 text-xl text-center font-lato">
               {props.title}
             </h2>
