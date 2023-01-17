@@ -1,8 +1,9 @@
 import nodeMailer from "nodemailer";
-import variables from "./variables";
 
 const transporter = nodeMailer.createTransport({
-  service: "gmail",
+  host: process.env.MAILER_HOST,
+  port: 587,
+  secure: false,
   auth: {
     user: process.env.EMAIL_USERNAME,
     pass: process.env.EMAIL_PASSWORD,
@@ -21,13 +22,14 @@ export async function sendMessage({
   message: string;
 }) {
   const mailOption = {
-    from: variables.EMAIL_USERNAME,
-    to: variables.TO_EMAIL,
+    // from: variables.EMAIL_USERNAME,
+    from: process.env.FROM_EMAIL,
+    to: process.env.TO_EMAIL,
     subject: `Website contact form`,
-    html: `You got a message from 
-        First Name : ${firstName}
-        Last Name: ${lastName}
-        Contact Number: ${contactNumber}
+    html: `You got a message from <br/>
+        First Name : ${firstName} <br/>
+        Last Name: ${lastName} <br/>
+        Contact Number: ${contactNumber} <br/>
         Message: ${message}`,
   };
 
