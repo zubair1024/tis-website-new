@@ -8,12 +8,12 @@ import Services from "@/components/Services";
 import dynamic from "next/dynamic";
 
 const title = "TIS Solutions";
-//TODO add a proper description
 const description = "Your Cladding Solution Provider";
+const websiteLink = "https://www.tisgulf.com/";
 
 const Home = () => {
   return (
-    <Layout title={title} description={description}>
+    <Layout title={title} description={description} websiteLink={websiteLink}>
       <>
         <header className="fixed z-50 w-full">
           <Header></Header>

@@ -3,6 +3,7 @@ import { NextSeo } from "next-seo";
 interface ILayoutProps {
   title: string;
   description: string;
+  websiteLink: string;
   children: JSX.Element;
 }
 
@@ -11,7 +12,23 @@ const Layout = (props: ILayoutProps) => {
     <>
       <NextSeo
         title={props.title}
+        titleTemplate={props.title}
+        defaultTitle={props.title}
         description={props.description}
+        canonical={props.websiteLink}
+        openGraph={{
+          url: props.websiteLink,
+          title: props.title,
+          description: props.description,
+          images: [
+            {
+              url: "/logo.png",
+              width: 226,
+              height: 128,
+              alt: props.title,
+            },
+          ],
+        }}
         additionalLinkTags={[
           {
             rel: "icon",
