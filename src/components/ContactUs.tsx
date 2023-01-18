@@ -121,9 +121,9 @@ const ContactForm = () => {
             <div className="flex">
               <button
                 onClick={handleSubmit(onSubmit)}
-                className="p-3 border shadow-lg hover:scale-105 hover:transition hover:ease-in rounded-xl "
+                className="p-3 border shadow-lg hover:scale-105 hover:transition hover:ease-in rounded-xl bg-[black] text-[#fff] uppercase w-full "
               >
-                Send Message
+                Submit
               </button>
             </div>
           </form>
