@@ -8,15 +8,15 @@ interface IServiceCardProps {
 
 const serviceItems: IServiceCardProps[] = [
   {
-    title: "Weatherproofing - EIF",
+    title: "Weather-Proofing - EIFS/ETICS",
     description:
-      "<b>External Insulation and Finishing System (EIFS)</b> is a non load bearing cladding system that provides exterior wall with insulated, water-resistant finished surface attached adhesively and mechanically to the substrate. <b>It is one of the most durable and tested cladding</b> in the construction industry. It can be used for newer structures and also can be retro-fitted to old structures to meet the performance requirement of the latest green building regulations.",
+      "<b>External Insulation and Finishing System (EIFS)</b> is a non load bearing cladding system that provides exterior wall with insulated, water-resistant finished surface attached adhesively and mechanically to the substrate. <b>It is one of the most durable and tested cladding</b> in the construction industry. It can be used for newer structures and also can be retro-fitted to old structures to meet the thermal requirements of the latest green building regulations.",
     image: "/services/eifs.jpg",
   },
   {
     title: "Cement Composite Cladding",
     description:
-      "<b>Composite Composite Cladding</b> consisting of a mixture of wood particles and cement called the <b>Cement Bonded Particle Board (CBPB)</b>. It combines the flexibility of wood with the strength and durability of cement, allowing a wide range of applications both indoors and outdoors. Its natural appearance can be finished to suit varied architectural needs, with either a raw, polished or sanded appearance.",
+      "<b>Cement Composite Cladding</b> consisting of a mixture of wood particles and cement called the <b>Cement Bonded Particle Board (CBPB)</b>. It combines the flexibility of wood with the strength and durability of cement, allowing a wide range of applications both indoors and outdoors. Its natural appearance can be finished to suit varied architectural needs, with either a raw, polished or sanded appearance.",
     image: "/services/cement-composition.jpg",
   },
   {
@@ -76,8 +76,8 @@ const Services = () => {
           <p className="max-w-3xl text-xl font-thin">
             We pride ourselves on providing exceptional customer service and
             attention to detail. We use only the highest quality materials and
-            latest techniques to ensure that your cladding project is completed
-            to the highest standards
+            latest techniques to ensure that your project is completed to the
+            highest standards
           </p>
         </div>
         <div className="flex flex-col justify-center p-6 md:flex-row md:flex-wrap">

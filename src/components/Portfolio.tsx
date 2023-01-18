@@ -111,7 +111,7 @@ const Portfolio = () => {
       >
         <div className="text-center font-lato">
           <h1 className="pb-4 text-3xl font-bold ">Projects</h1>
-          <p className="max-w-3xl text-xl font-thin">
+          <p className="max-w-3xl px-5 text-xl font-thin">
             Our team of experienced professionals has the skills and expertise
             to handle projects of all sizes, from small renovations to
             large-scale commercial developments. We take a collaborative

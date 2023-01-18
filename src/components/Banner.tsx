@@ -9,7 +9,7 @@ const Banner = () => {
           animate={{ x: 0, opacity: 1 }}
         >
           <h1 className="py-2 text-5xl font-bold text-left font-lato">
-            Elevate your façades with our Cladding Solutions
+            Elevate your Façades with our Cladding Solutions
           </h1>
           <p className="text-xl ">
             Best materials, state-of-the-art techniques, and highly skilled
