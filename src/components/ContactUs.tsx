@@ -143,7 +143,8 @@ const ContactUs = () => {
         <div className="text-center">
           <h1 className="text-2xl">Contact Us</h1>
           <p className="text-sm">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Want to get in touch with us? We would love to hear from you. Here
+            is how you can get in touch with us.
           </p>
           <motion.div
             className="flex flex-col md:flex-row w-full p-6 my-6 space-y-6 md:space-y-0 md:space-x-10 rounded-lg shadow-lg bg-[#fff] text-[#000]"
