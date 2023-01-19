@@ -167,17 +167,11 @@ const ContactUs = () => {
               <div>
                 <p>Email</p>
                 <p className="font-thin">
-                  <a href="mailto:rz@tisgulf.com">rz@tisgulf.com</a>
+                  <a href="mailto:rz@tisgulf.com">qs@tisgulf.com</a>
                 </p>
               </div>
               <div>
                 <p>Contact Number</p>
-                <p className="font-thin">
-                  <a href="tel:+971 55 780 6050">+971 55 780 6050</a>{" "}
-                </p>
-              </div>
-              <div>
-                <p>Alternate Number</p>
                 <p className="font-thin">
                   <a href="tel:+971 4 401 8784 ">+971 4 401 8784</a>
                 </p>
