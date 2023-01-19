@@ -167,7 +167,7 @@ const ContactUs = () => {
               <div>
                 <p>Email</p>
                 <p className="font-thin">
-                  <a href="mailto:rz@tisgulf.com">qs@tisgulf.com</a>
+                  <a href="mailto:qs@tisgulf.com">qs@tisgulf.com</a>
                 </p>
               </div>
               <div>
