@@ -179,7 +179,7 @@ const ContactUs = () => {
               <div>
                 <p>Contact Number</p>
                 <p className="font-thin">
-                  <a href="tel:+971 4 401 8784 ">+971 4 401 8784</a>
+                  <a href="tel:+971 4 401 8784 ">+971 4 553 7227</a>
                 </p>
               </div>
             </div>
